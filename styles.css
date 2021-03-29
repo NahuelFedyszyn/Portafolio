@@ -92,6 +92,9 @@ header a:hover{
         height: 55rem;
     }
 
+    #pre-CardContainer article{
+        overflow-x: scroll;
+    }
 
 
     #aboutMe{
