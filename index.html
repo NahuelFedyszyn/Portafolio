@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Bienvenido!</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+    <link rel="shortcut icon" href="img/logo1600x1600.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js"></script>
+</head>
+<body onload="onLoad()">
+    <header id="header">
+        <a href="#aboutMe">SOBRE MI</a>
+        <a href="#projects">MIS PROYECTOS</a>
+        <a href="#contact">CONTACTO</a>
+    </header>
+    <main >
+        <section id="welcome">
+            <div id="welcomeOpacity">
+                <div class="container" id="welcomeContainer">
+                    <div class="row" style="margin: auto;">
+                        <div class="col">
+                            <h1 id="welcomeTitle">¡Hola! Mi nombre es Nahuel Fedyszyn</h1>
+                        </div>
+                    </div>
+                    <div class="row" style="margin: auto;">
+                        <div class="col">
+                            <p id="welcomeSub">Un apasionado por el desarrollo de Software</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="aboutMe">
+            <div id="aboutMeContainer" class="container">
+                <h1 id="aboutMeTitle">"Practico y estudio diariamente, utilizando la pasion como combustible para mi motivacion"</h1>
+                <div class="container aboutMePs">
+                    <div class="row">
+                        <p>Soy un estudiante de Ingenieria en Informatica apasionado por el desarrollo de Software. Todos los dias estoy estudiando los conocimientos que me brinda mi universidad, complementandolos con cursos para poder fortalezer los conceptos en los que estoy más interesado, y realizando proyectos para poner en practica esos conocimientos.</p>
+                    </div>
+                    <div class="row">
+                        <p>Estoy buscando cumplir mi objetivo de ser parte de una compañia de desarrollo de Software, y el camino que estoy tomando para lograr ese objetivo es el del conocimiento y la experiencia.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="fedy">
+            <div class="container">
+                <div class="row" style="align-items: center; justify-content: center;">
+                    <div class="col">
+                        <img id="fedyImg" src="img/logoPrincipalTransp.png" alt="">
+                    </div>
+                    <div class="col">
+                        <h1 id="fedyTitle">Mi espacio para el desarrollo frontend</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <p id="fedyP">Actualmente soy el fundador y unico empleado de Fedy Deveolpment, compañia dedicada al diseño de paginas web para pequeñas y medianas empresas, o para particulares independientes, con el objetivo de hacer que sus trabajos tengan una imagen más profesional frente a sus clientes y poder brindarles más información a los mismos a través de Internet</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" style="width: 100%;">
+            <div class="container" style="width: 100%;">
+                <div class="row">
+                    <div class="col">
+                        <h1 id="projectsTitle">Algunos de los proyectos en los que participe</h1>
+                    </div>
+                </div>
+                <div class="row" style="width: 100%;">
+                    <div class="card-container" id="card-container">
+                        <a href="#welcome" class="card">
+                            <div class="articleHeader">
+                                <div>
+                                    <div class="category-title">
+                                        <span class="date">Portfolio WebSite</span>
+                                    </div>
+                                </div>
+                                <h2 class="article-title">
+                                    Nahuel Fedyszyn | Fedy Development
+                                </h2>
+                            </div>
+                            <div class="img-container">
+                                <img src="img/logoPrincipalTransp.png"/>
+                            </div>
+                            <div class="author" style="margin: 0;">
+                                <div class="profile"></div>
+                                <div class="info" style="margin:0">
+                                    <div class="caption">Colaboradores</div>
+                                    <div class="colabs">-</div>
+                                </div>
+                            </div>
+                            <div class="tags">
+                                <div>JavaScript</div>
+                                <div>HTML</div>
+                                <div>CSS</div>
+                                <div>Bootstrap</div>
+                            </div>
+                        </a>
+                        <!-- repeat the card here. -->
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="slideBtnContainer">
+                        <button class="btnSlide" onmousedown="scrollLeft();" id="btnSlideLeft" type="button"></button>
+                        <button class="btnSlide" onclick="scrollRight();" id="btnSlideRight" type="button"></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h1 id="contactTitle">¡Contactame!</h1>
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col contactContacts">
+                        <span><a target="_blank" href="https://api.whatsapp.com/send?phone=5493874117921"><i class="bi bi-phone"></i><p>+54 9 387 4117 921</p></a></span>
+                        <span><a target="_blank" href="tel:03876207013"><i class="bi bi-telephone"></i><p>0387 6 207 013</p></a></span>
+                        <span><a target="_blank" href="https://mail.google.com/mail/?view=cm&fs=1&to=nahuelfedyszyn@gmail.com"><i class="bi bi-envelope"></i><p>nahuelfedyszyn@gmail.com</p></a></span>
+                        <span><a target="_blank" href="https://www.google.com.ar/maps/place/Barrio+El+Huaico,+Salta/@-24.7233791,-65.430943,15z/data=!3m1!4b1!4m5!3m4!1s0x941bc105df349b99:0xfd20bd337b006afb!8m2!3d-24.7233812!4d-65.4221678"><i class="bi bi-house"></i><p>Salta Capital, Barrio El Huaico</p></a></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footerNav">
+            <a target="_blank" href="https://www.linkedin.com/in/nahuel-fedyszyn-a95764186/"><i class="bi bi-linkedin"></i></a>
+            <a target="_blank" href="https://github.com/NahuelFedyszyn"><i class="bi bi-github"></i></a>
+        </div>
+    </footer>
+</body>
+</html>

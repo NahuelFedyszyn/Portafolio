@@ -1,0 +1,361 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-image: url("https://media.istockphoto.com/vectors/black-background-vector-id1167050865?k=6&m=1167050865&s=612x612&w=0&h=I-wf_Vv-MzqTfcYd8AxZKKvXGM3yC6DNNAEOHswvaMY=");
+    background-repeat: repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color:white;
+    width: 100vw;
+    overflow-x: hidden;
+    font-family: 'Bodoni Moda', serif;
+}
+
+section{
+    width: 100%;
+    box-shadow: white 0rem 0rem 1rem 0.3rem;
+}
+
+header{
+    background-color: rgb(14, 5, 48);
+    height: 11vh;
+    width: 100%;
+    box-shadow: white 0rem 0rem 1rem 0.3rem;
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 5;
+    transition: 0.3s;
+}
+
+header a{
+    padding: 2.8vh 1.5vw;
+    font-size: 3vh;
+    transition: 0.3s;
+    font-family: monospace;
+    color: white;
+    text-decoration: none;
+}
+
+header a:hover{
+    background-color: black;
+    font-size: 3.5vh;
+    color:white
+}
+
+#welcome{
+    width: 100%;
+    height: 100vh;
+    margin-left: 0;
+    margin-right: 0;
+    background-image: url(https://www.goodcore.co.uk/blog/wp-content/uploads/2019/08/what-is-coding.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 0.1s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#welcomeContainer{
+    height: 25em;
+    min-width: 100%;
+    background-color: rgba(0, 0, 0, 0.815);
+    margin: 0;
+    padding: 0;
+    box-shadow: white 0rem 0rem 1rem 0.3rem;
+    display: grid;
+}
+
+#welcomeOpacity{
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(0, 0, 0, 0.425);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#welcomeTitle{
+    font-size: 4rem;
+    text-align: center;
+    text-shadow: white 0px 0px 8px;
+}
+
+#welcomeSub{
+    font-size: 2rem;
+    text-align: center;
+    text-shadow: white 0px 0px 8px;
+}
+
+#aboutMe{
+    background-color: black;
+}
+
+#aboutMeContainer{
+    padding: 10rem 0 8rem 0;
+}
+
+#aboutMeTitle{
+    font-family: 'Bodoni Moda', serif;
+    font-weight: 100;
+    font-size: 3rem;
+    font-style: italic;
+    text-shadow: white 0px 0px 8px;
+}
+
+.aboutMePs{
+    margin: 5rem 0;
+}
+
+.aboutMePs p{
+    font-size: 1.5rem;
+    text-align: justify;
+}
+
+#fedy{
+    padding: 5rem 0;
+}
+
+#fedyTitle{
+    margin-bottom: 2rem;
+    font-size: 4rem;
+    font-style: italic;
+    text-shadow: white 0px 0px 8px;
+}
+
+#fedyImg{
+    max-height: 20rem;
+    width: auto;
+    background: white;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+    transition: 0.3s;
+}
+
+#fedyImg:hover{
+    transform: scale(1.2);
+    box-shadow: grey 0rem 0rem 1rem 0.3rem;
+}
+
+#fedyP{
+    font-size: 1.5rem;
+    text-align: justify;
+}
+
+#projects{
+    background-color: #100e17;
+    padding-top: 5rem;
+}
+
+#projectsTitle{
+    font-family: 'Bodoni Moda', serif;
+    font-weight: 100;
+    font-size: 3rem;
+    font-style: italic;
+    text-shadow: white 0px 0px 8px;
+}
+
+.card-container {
+    scroll-behavior: smooth;
+    transition: 0.5s;
+    width: auto;
+    margin: 0;
+    overflow-x: hidden;
+    display: flex;
+    background-color: #100e17;
+    padding: 0;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 5rem 0;
+}
+
+.card {
+    color: white;
+    text-decoration: none;
+    min-width: 23rem;
+    max-width: 23rem;
+    height: 30rem;
+    border:0.1rem white solid;
+    border-radius: 16px;
+    background-color: #17141d;
+    box-shadow: -1rem 0 3rem #000;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    transition: 0.2s;
+}
+
+.img-container{
+    background-color: white;
+    border-radius: 1rem;
+    min-height: 15rem;
+    max-height: 15rem;
+    width: 100%;
+}
+
+.img-container img{
+    height: 100%;
+    size: cover;
+}
+
+.date {
+    color: #8a8a8a;
+}
+
+.colabs{
+    margin: 0;
+    font-size: 0.5rem;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1rem 0 1rem;
+}
+
+.tags div {
+    font-size: 9px;
+    font-weight: 700;
+    padding: 4px 10px;
+    border: 3px solid #28242f;
+    border-radius: 2rem;
+}
+
+.card .category-title {
+    font-size: 14px;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.card .article-title {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.card .articleHeader {
+    margin-bottom: auto;
+}
+
+.card .author {
+    width: 100%;
+    
+    margin-top: 3rem;
+    display: grid;
+    
+}
+
+.author .info .caption {
+    color: #8a8a8a;
+}
+
+.card:not(:first-child) {
+    margin-left: -130px;
+}
+
+.card:hover {
+    transform: translateY(-1rem);
+    color: white;
+}
+
+.card:hover~.card{
+    transform: translateX(130px);
+}
+
+.slideBtnContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 4rem;
+}
+
+.btnSlide{
+    height: 2rem;
+    margin: 0.5rem;
+    transition: 0.3s;
+    width: 40%;
+    background-color: #161616;
+    border:none;
+    box-shadow: white 0 0 0.3rem;
+    border-radius: 0.3rem;
+}
+
+.btnSlide:hover{
+    cursor: pointer;
+    box-shadow: white 0 0 0.8rem;
+}
+
+#contact{
+    padding: 5rem 0;
+}
+
+#contactTitle{
+    font-family: 'Bodoni Moda', serif;
+    font-weight: 100;
+    font-size: 3rem;
+    font-style: italic;
+    text-shadow: white 0px 0px 8px;
+}
+
+.contactContacts span a{
+    display: flex;
+    align-items: center;
+    transition: 0.2s;
+    color: white;
+    text-decoration: none;
+}
+
+.contactContacts span a:hover{
+    text-shadow: 0px 0px 15px white;
+    color: white;
+}
+
+.contactContacts span{
+    color:white;
+    display: flex; 
+    align-items: center;
+    font-size: 2rem;
+    height: auto;
+    margin:2.5rem 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.contactContacts span i{
+    font-size: 3rem;
+    margin-right: 2rem;
+}
+
+footer{
+    position: absolute;
+    width: 100vw;
+    height: 10vh;
+    box-shadow: white 0px 0px 10px ;
+    display: flex;
+    align-items: center;
+    z-index: 0;
+    background-color: rgb(14, 5, 48);
+}
+
+.footerNav{
+    margin-left: 5vw;
+    z-index: 1;
+}
+
+.footerNav a{
+    margin: 0 1.5vw;
+    font-size: 5vh;
+    transition: 0.2s;
+    color: white;
+}
+
+.footerNav a:hover{
+    text-shadow: 0px 0px 15px white;
+    color: white;
+}
